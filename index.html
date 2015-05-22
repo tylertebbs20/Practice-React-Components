@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<link rel="normal.css" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+<div class="parent">
+  <div class="header">
+    <div class="m">
+      <img src="http://i1.wp.com/www.entrepreneurial-insights.com/wp-content/uploads/2014/10/Medium-logo-dark.png"/>
+    </div>
+    <div class="published">
+      <img src="https://d262ilb51hltx0.cloudfront.net/fit/c/32/32/1*bs9PbxDndAW7mmqve3EQ-w.jpeg"/>
+      <span>Published In</span>
+      React Tutorial
+    </div>  
+    <div class="buttonArea">
+          <input class="searchbar" type="text" placeholder="Search Medium" required>
+          <input class="signIn" type="text" placeholder="Sign in/Sign up" required>
+    </div>
+  </div>
+
+  <div class="middleColumn">
+    <h2>React Components</h2>
+      <p class="paragraphs">Components are the smallest, yet most fundamental part of React. They’re similar, in concepts, to things like widgets and modules. React defines itself as a library for building user interfaces. As such, when you think of a user interface you want to build (with React), you need to think of it in terms of the smallest possible components that you can define.</p>
+      <p class="paragraphs">These components include code which defines how DOM elements are created and how users can interact with them. Components can be defined purely in JavaScript or they can be defined in a superset (or extended variation) of JavaScript called JSX. If you decide to use JSX for your component definitions, you may also need a compiler application, but we’ll get to that in a minute.</p>
+      <div class="line">
+        <p class="boxquotes">We’re going to be referring to pure JavaScript as JS and the React version of JavaScript as JSX.</p>
+        <p class="boxquotes">You can find the accompanying source-code, for this tutorial, at: https://github.com/formativ/tutorial-react-components.</p>
+        <p class="boxquotes">Please post any errors you find, or questions you have as comments on this article or as issues on GitHub.</p>
+        <p class="boxquotes">Thanks to Pete Hunt for helping to improve this!</p>
+      </div>
+      
+      <h3>Embedded HTML</h3>
+      <p class="paragraphs">If you’ve been developing websites for a while, you may have flinched when I spoke about using HTML within your JavaScript. For the longest time, a development paradigm has existed which says that you should split HTML and JavaScript. Words like unobtrusive have been repurposed to express this kind of separation. That is exactly how I felt, until I started working with React.</p>
+      <p class="paragraphs">The reason this paradigm exists is to decrease coupling (how much things depend on each other) and increase cohesion (how well different things work together). So we have created an environment in which we try our best to make HTML (and templates) as free of logic as possible. We then need to attach behaviour to this in the form of external scripts.</p>
+      <p class="paragraphs">There are trade-offs with this approach to doing things. For starters, it takes more effort trying to keep these two things separate. There are many template engines and languages. There are also many template parsers to handle them all. And yet these languages (with the exception of HTML) still seem to include a modicum of logical operations…</p>
+      <p class="paragraphs">Additionally, when we need to modify the contents of a web page, via JavaScript, we have to know about HTML and/or templates. How else can we know what to display and where to display it? We could load external templates, via additional HTTP requests, but how would we know where to put it without some knowledge of the DOM? We could load templates embedded within special script tags, but we would first need to fetch the contents of those script tags.</p>
+      <p class="paragraphs">This brings us to the biggest problem with the separation of HTML and JavaScript: The only way we can get elements to attach behaviour to, and read data from, is by knowing about HTML elements in the document. Libraries like jQuery are built around the idea that HTML elements are only a CSS selector away from JavaScript.</p>
+      
+      <div class="line">
+        <p class="boxquotes">These points from from a presentation I found at: http://www.slideshare.net/floydophone/react-preso-v2.</p>
+      </div>
+
+      <h3>Components</h3>
+      <p class="paragraphs">Hopefully you’re willing to try this whole embedded HTML thing. In case not, I will create JS examples along with the JSX examples in this tutorial Let’s look at a simple component, just to get a feel for how one defines them:</p>
+
+      <div class="componenetsCode">
+<p>/**<br>
+ * @jsx React.DOM<br>
+ */<br></p>
+  
+<p>var HelloWorld = React.createClass({<br>
+  render : function() {<br>
+    return <div>hello world!</div><br>
+  }<br>
+});</p>
+
+<p>React.renderComponent(<br>
+  <HelloWorld />,<br>
+  document.body<br>
+);<br></p>
+      </div>
+
+
+  </div>
+
+  <div class="footer">
+    <div class="readingList">NEXT STORY FROM YOUR READING LIST</div>
+
+    <div class="cars">
+      <div class="leftSide">
+        <div class="sharingCars">Sharing Cars With Strangers: Part I</div>
+        <div class="driving">Maybe it’s easier to tell stories like this, when you’re both driving the same way.</div>
+        <div class="odArea">
+          <img class="odImage" src="https://d262ilb51hltx0.cloudfront.net/fit/c/36/36/1*Pr4CiPNL0HVDAUsq7agsIg.png" />
+          <div class="demandColumn">
+            <a class="onDemand" href="https://medium.com/matter">matter</a>
+            <a class="lauren" href="https://medium.com/@stevenlevy">Steven Levy</a>
+          </div>
+          <div class="date">1 day ago</div>
+        </div>
+      </div>
+      <div class="rightSide">
+        <img class="carPic" src="https://d262ilb51hltx0.cloudfront.net/fit/c/140/120/1*i6_agJfGCYdYtCnk3sYQ0Q.jpeg" />
+      </div>
+    </div>
+
+    <div class="osama">
+      <div class="osamaLeft">
+        <div class="billGates">The Bill Gates / Osama Bin Laden Library Smackdown</div>
+        <div class="stevens">By Steven Levy It is an odd day that produces reading lists from Bill Gates and…</div>
+        <div class="odArea">
+          <img class="odImage" src="https://d262ilb51hltx0.cloudfront.net/fit/c/45/45/1*ONgCBdCArb_vkwcmEH3H1A.jpeg" />
+          <div class="demandColumn">
+            <a class="onDemand" href="https://medium.com/ondemand">On Demand</a>
+            <a class="lauren" href="https://medium.com/@laurenscherr">Lauren Scherr</a>
+          </div>
+          <div class="date">Apr 3</div>
+        </div>
+      </div>
+
+      <div class="osamaRight">
+        <img class="osamaPic" src="https://d262ilb51hltx0.cloudfront.net/fit/c/140/120/1*XGnT1RHig3K6VV779DkpfQ@2x.png" />
+      </div>
+    </div>
+
+    <div class="draper"></div>
+    <div class="briton"></div>
+    <div class="daughter"></div>
+    <div class="storiesButton"></div>
+  </div>
+  
+</div>
+
+	</body>
+</html>

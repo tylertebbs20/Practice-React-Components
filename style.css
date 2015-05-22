@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  width:100%;
+}
+
+.parent {
+
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+}
+ 
+ .m {
+  width:4%;
+}
+
+.m > img {
+	max-width: 100%;
+}
+
+.published {
+  margin-left: 34%;
+  margin-right: 24%;
+
+}
+
+.search {
+
+}
+
+.searchbar {
+  border-radius: 22px;
+  margin: 16px;
+  height: 32px;
+  text-align: center;
+}
+
+.signIn {
+  border-radius: 22px;
+  margin: 16px;
+  height: 32px;
+  color: green;
+  border-color: green;
+  text-align: center;
+}
+
+.middleColumn {
+  margin-left: 30%;
+  width: 33%;
+}
+    
+h2 {
+  font-size: 58px;
+}
+
+.paragraphs {
+  font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.line {
+  border-left: 5px solid black;
+  position: relative;
+  left: -15px;
+  padding-left: 10px;
+}
+
+.boxquotes {
+  font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+ h3 {
+  font-size: 36px;
+
+ }
+
+ .componenetsCode {
+  font-family: Menlo,Monaco,"Courier New",Courier,monospace;
+  font-size: 16px;
+  background: #F2F2F2;
+  margin-bottom: 20px;
+  padding: 20px;
+  white-space: pre-wrap;
+ }
+
+.footer {
+  background: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+}
+
+.readingList {
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+}
+    
+.cars {
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftSide{
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.sharingCars {
+  font-size: 24px;
+}
+
+.driving {
+  padding-top: 11px;
+}
+
+.rightSide{
+
+}
+
+.carPic {
+
+}
+
+.osama {
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.osamaLeft {
+  display: flex;
+  flex-direction: column;
+  margin-right: 58px;
+}
+
+.billGates {
+  font-size: 24px;
+}
+
+.stevens {
+  padding-top: 11px;
+}
+
+.odArea {
+  display: flex;
+  flex-direction: row;
+}
+
+.odImage {
+
+}
+
+.demandColumn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.onDemand {
+ 
+}
+
+.lauren {
+  color: gray;
+  text-decoration: none;
+}
+
+.date {
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.osamaRight {
+
+}
+        
+.osamaPic {
+
+}
+
+
+.draper {
+
+}
+
+.briton {
+
+}
+
+.daughter {
+
+}
+
+.storiesButton{
+
+}
